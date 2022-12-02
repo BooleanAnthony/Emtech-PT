@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>THE FIGHT OF THE CENTURY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+    <body>
+        <div class="banner">
+            <!--about us logo and gallery-->
+            <div class="wrapper-1">
+                <div class="column">
+                    <a href="">About Us</a> 
+                </div>
+                <div class="column">
+                    <img src="Logo.png" alt="Logo saying Epic Rap Battles of History">
+                </div>
+                <div class="column">
+                    <a href="">Gallery</a>
+                </div>
+            </div>
+           
+            <!--eminem vs kanye-->
+            <div class="contestants">
+                <div class="fighter">
+                    <a href="https://en.wikipedia.org/wiki/Eminem">Know About Eminem</a>
+                </div>
+                <div class="fighter">
+                    <img src="vs.png" alt="versus png" height="50%"; width="50%">
+                </div>
+                <div class="fighter">
+                    <a href="https://en.wikipedia.org/wiki/Kanye_West">Know About Kanye</a>
+                </div>
+            </div>
+
+            
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="eminem.jpg"></div>
+                  <div class="swiper-slide"><img src="eminem_raps.jpg"></div>
+                  <div class="swiper-slide"><img src="eminem_surprised.jpg"></div>
+                  <div class="swiper-slide"><img src="eminem_returns.jpg"></div>
+                  <div class="swiper-slide"><img src="eminem_dread.jpg"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+<!--<iframe class="eminemCarousel" src=" "></iframe>-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+        const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+        </body>
+</html>
