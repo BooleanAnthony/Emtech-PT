@@ -2,28 +2,27 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
-.container {
-    width: 50%;
-    height: 10em;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-    padding: 0;
-    margin: 0;
+.container .swiper .swiper-wrapper {
+    width: 100vh;
+    height: 100vh;
     background-color: transparent;
+    display: block;
+    align-items: center;
+    justify-content: center;  
+    margin: auto;
+    padding: 0;
 }
 
 .swiper {
-    width: 80%;
-    height: 30vh;
+    width: fit-content;
+    height: fit-content;
 }
 
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    padding-top: 1em;
 }
 
 a {
@@ -52,11 +51,19 @@ a {
 }
 
 .contestants {
-    height: 20em;   
+    height: 6em;   
 }
 
 .contestants .fighter {
     width: 33.3%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contestants .vs {
+    width: 30%;
     float: left;
     display: flex;
     justify-content: center;
@@ -68,4 +75,35 @@ a {
     display: table;
     clear: both;
     display: flex;
+}
+
+.kanyeCarousel {
+    padding-right: 5em;
+    border-color: transparent;
+}
+
+.eminemCarousel {
+    padding-left: 5em;
+    border-color: transparent;
+}
+
+.table {
+    height: 7em;   
+}
+
+.table .carousel {
+    width: 33.3%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table .begin {
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }
